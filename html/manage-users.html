@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Quản lý người dùng</title>
+
+    <!-- Link CSS Custom -->
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/manage.css">
+
+    <!-- Link Icon Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!--  Link Icon Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Header Area -->
+    <header>
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="header-top__logo">
+                <img src="../assets/images/logo_03.png" alt="LOGO">
+            </div>
+            <div class="header-top__navbar">
+                <a class="header-top__navbar-item" href="../html/manage-products.html">Quản lý sản phẩm</a>
+                <a class="header-top__navbar-item" href="../html/manage-users.html">Quản lý người dùng</a>
+            </div>
+            <div class="header-top__actions" style="color: #fff;">
+                <img class="header-top__user" onclick="displayUserInfor()" src="../assets/images/header__user.png" alt="USER">
+                ADMIN
+                <div class ="header-top__userInfor__logout">
+                    <button onclick="logOut()">Đăng xuất</button>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Body Area -->
+    <main>
+        <h1 class="main__title">Quản lý danh sách người dùng</h1>
+        
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>ID</th>
+                    <th>ẢNH ĐẠI DIỆN</th>
+                    <th>EMAIL</th>
+                    <th>XÓA</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+    </main>
+    <!-- End Body Area -->
+
+    <!-- Link Java Script -->
+    <script src="../js/manage-users.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Giỏ hàng</title>
+
+    <!-- Link CSS Custom -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+
+    <!-- Link Icon Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!--  Link Icon Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Header Area -->
+    <header>
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="header-top__logo">
+                <img src="../assets/images/logo_03.png" alt="LOGO">
+            </div>
+            <div class="header-top__navbar">
+                <a class="header-top__navbar-item" href="#">Trang chủ</a>
+                <a class="header-top__navbar-item" href="../index.html">Sản phẩm</a>
+                <a class="header-top__navbar-item" href="#">Blog</a>
+                <a class="header-top__navbar-item" href="#">Liên hệ</a>
+            </div>
+            <div class="header-top__actions">
+                
+            </div>
+        </div> 
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Body Area -->
+    <main id="main">
+        <div class="main__title">
+            <h1>Giỏ hàng của bạn</h1>
+            <h4 id="email"></h4>
+        </div>
+        <table class="main__table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>TÊN SẢN PHẨM</th>
+                    <th>GIÁ TIỀN</th>
+                    <th>SỐ LƯỢNG</th>
+                    <th>THÀNH TIỀN</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+            <tfoot id="tfoot">
+                <tr>
+                    <td colspan="5">
+                        <div id="total"></div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="main__pay" style="display: none;">
+            <button onclick="payCart()" >Thanh toán</button>
+        </div>
+    </main>
+    <!-- End Body Area -->
+
+     <!-- Footer Area -->
+    <footer>
+        <div class="footer__box-left">
+            <img src="../assets/images/logo_03.png" alt="">
+            <p style="text-align: justify;">Cam kết cung cấp những thức uống bổ dưỡng từ nguyên liệu tươi sạch, đảm bảo an toàn chất lượng đến quý khách.</p>
+        </div>
+        <div class="footer__box-center">
+            <h3>NỘI DUNG</h3>
+            <ul class="quick-menu">
+                <a class="quick-menu__item" href="#">Trang chủ</a>
+                <a class="quick-menu__item" href="#">Sản phẩm</a>
+                <a class="quick-menu__item" href="#">Blog</a>
+                <a class="quick-menu__item" href="#">Liên hệ</a>
+            </ul>
+        </div>
+        <div class="footer__box-contact">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <ul class="quick-menu">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>&nbsp&nbsp
+                    Số 69, Đường Trương Quốc Dung, P.10, Q.Phú Nhuận, Tp.HCM
+                </li>
+                <li><i class="fa-solid fa-phone"></i>&nbsp&nbsp
+                    (028) 3 8475 687
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>&nbsp&nbsp
+                    phatjuicebar@gmail.com</li>
+                <li>
+                    <i class="fa-solid fa-car"></i>&nbsp&nbsp
+                    Có chỗ đỗ xe hơi
+                </li>
+            </ul>
+        </div>
+        <div class="footer__box-right">
+            <h3>LIÊN HỆ</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button type="button">Nhận tin</button>
+            </form>
+        </div>
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- Link Java Script -->
+    <script src="../js/cart.js"></script>
+</body>
+</html>

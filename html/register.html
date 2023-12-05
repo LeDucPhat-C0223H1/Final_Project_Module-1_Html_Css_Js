@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Đăng Ký Tài Khoản</title>
+
+    <!-- Link Css Custom-->
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <form action="/action_page.php">
+        <div class="container">
+            <h1>Đăng ký</h1>
+            <p class="instruction">Hãy điền đầy đủ thông tin để tạo một tài khoản.</p>
+            <hr>
+    
+            <label for="email"><b>1. Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+            <label for="psw"><b>2. Tạo mật khẩu</b></label>
+            <input type="text" placeholder="Enter Password" name="psw" id="password" required>
+            <label for=""><b>3. Nhập lại mật khẩu</b></label>
+            <input type="text" placeholder="Enter Password" name="" id="confirmPassword" required>
+            <button type="submit" class="registerbtn" onclick="register(event)">Đăng ký</button>
+
+            <p class="signin">Nếu bạn đã có tài khoản hãy chọn <a href="./login.html">Đăng nhập</a>.</p>
+        </div>
+    </form>
+
+    <!-- Link Java Script -->
+   <script src="../js/register.js"></script>
+</body>
+</html>

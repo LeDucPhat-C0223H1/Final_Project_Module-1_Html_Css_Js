@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Đăng nhập</title>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <div class="container">
+            <h1>Đăng nhập</h1>
+            <hr>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="psw"><b>Mật khẩu</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+            <button type="submit" class="registerbtn" onclick="login(event)">Đăng nhập</button>
+
+            <p class="signin">Bạn đã có tài khoản chưa? <a href="./register.html">Đăng ký</a>.</p>
+        </div>
+    </form>
+
+    <!--Link Java Script  -->
+    <script src="../js/login.js"></script>
+</body>
+</html>

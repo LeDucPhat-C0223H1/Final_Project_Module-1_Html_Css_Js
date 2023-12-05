@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255, 165, 0, 0.4);
+}
+
+main{
+    width: 100%;
+    background: url("../assets/images/header__banner.png");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main
+.main__title{
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+main
+.main__table{
+    background-color: #fff;
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-collapse: collapse;
+    font-weight: 600;
+}
+
+main
+.main__table
+tr,th,td{
+    text-align: center;
+    align-items: center;
+    border: 2px solid #919090;
+    padding: 10px;
+}
+
+main
+.main__table
+.name-product{
+    text-align: start;
+}
+
+main
+.main__table
+.action-quantity{
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main
+.main__table
+#total{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+main
+.main__pay button{
+    background-color: #fff;
+    border: 2px solid #919090;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+main
+.main__pay button:hover{
+    background-color: #ffa500;
+}
+
+main
+.main__thanks-guest{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main
+.main__thanks-guest h2{
+    font-size: 33px;
+}
+
+main
+.main__thanks-guest button{
+    background-color: #fff;
+    border: 2px solid #919090;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+main
+.main__thanks-guest button:hover{
+    background-color: #ffa500;
+}
